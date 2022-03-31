@@ -2,6 +2,7 @@ package com.example.myview.View
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myview.R
+import com.example.myview.ShowPictureActivity
 
 class MyRecyclerView(view: View,resouce:Int,myArray:ArrayList<Int>) {
     private  var mRecyclerview: RecyclerView
@@ -68,11 +70,35 @@ class MyRecyclerView(view: View,resouce:Int,myArray:ArrayList<Int>) {
             return holder
         }
         override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-            if (holder is ViewHolder1) holder.image1.setImageResource(imageList[position])
+            if (holder is ViewHolder1) {
+                holder.image1.setImageResource(imageList[position])
+                holder.image1.setOnClickListener {
+                    var intent = Intent(root.context, ShowPictureActivity::class.java)
+                    intent.putExtra("ImageImformation", imageList[position])
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    root.context.startActivity(intent);
+                }
+            }
 
-            if (holder is ViewHolder2)  holder.image2.setImageResource(imageList[position])
+            if (holder is ViewHolder2) {
+                holder.image2.setImageResource(imageList[position])
+                holder.image2.setOnClickListener {
+                    var intent = Intent(root.context, ShowPictureActivity::class.java)
+                    intent.putExtra("ImageImformation", imageList[position])
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    root.context.startActivity(intent);
+                }
+            }
 
-            if (holder is ViewHolder3)  holder.image3.setImageResource(imageList[position])
+            if (holder is ViewHolder3)  {
+                holder.image3.setImageResource(imageList[position])
+                holder.image3.setOnClickListener {
+                    var intent = Intent(root.context, ShowPictureActivity::class.java)
+                    intent.putExtra("ImageImformation", imageList[position])
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    root.context.startActivity(intent);
+                }
+            }
         }
         override fun getItemCount()=imageList.size
 
@@ -87,4 +113,5 @@ class MyRecyclerView(view: View,resouce:Int,myArray:ArrayList<Int>) {
                 else -> THIRD_ITEM
             }
     }
+
 }

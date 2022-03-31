@@ -56,10 +56,10 @@ class PictureFragment : Fragment() {
     fun initpicture(){
         when(choose){
             1 -> array= arrayListOf(R.drawable.fzu)
-            2 -> array= arrayListOf(R.drawable.blank,R.drawable.blank)
-            3 -> array= arrayListOf(R.drawable.fzu,R.drawable.fzu,R.drawable.fzu)
-            4 -> array= arrayListOf(R.drawable.blank,R.drawable.blank,R.drawable.blank,R.drawable.blank)
-            5 -> array= arrayListOf(R.drawable.blank,R.drawable.blank,R.drawable.blank,R.drawable.fzu,R.drawable.blank,R.drawable.blank,R.drawable.blank,R.drawable.blank,R.drawable.blank)
+            2 -> array= arrayListOf(R.drawable.lazy,R.drawable.playball)
+            3 -> array= arrayListOf(R.drawable.fzu,R.drawable.watermelon,R.drawable.fzu)
+            4 -> array= arrayListOf(R.drawable.playball,R.drawable.lazy,R.drawable.watermelon,R.drawable.fzu)
+            5 -> array= arrayListOf(R.drawable.lazy,R.drawable.lazy,R.drawable.lazy,R.drawable.playball,R.drawable.playball,R.drawable.playball,R.drawable.watermelon,R.drawable.watermelon,R.drawable.watermelon)
         }
     }
     override fun onResume() {

@@ -7,9 +7,11 @@
         <entry key="..\:/homework/MyView/app/src/main/res/drawable/tab_one_selector.xml" value="0.2388888888888889" />
         <entry key="..\:/homework/MyView/app/src/main/res/drawable/tab_three_selector.xml" value="0.2388888888888889" />
         <entry key="..\:/homework/MyView/app/src/main/res/drawable/tab_two_selector.xml" value="0.2388888888888889" />
+        <entry key="..\:/homework/MyView/app/src/main/res/layout/activity_NinegridTest.xml" value="0.27447916666666666" />
         <entry key="..\:/homework/MyView/app/src/main/res/layout/activity_first.xml" value="0.33" />
         <entry key="..\:/homework/MyView/app/src/main/res/layout/activity_main.xml" value="0.2808988764044944" />
         <entry key="..\:/homework/MyView/app/src/main/res/layout/activity_second.xml" value="0.33" />
+        <entry key="..\:/homework/MyView/app/src/main/res/layout/activity_show_picture.xml" value="0.20104166666666667" />
         <entry key="..\:/homework/MyView/app/src/main/res/layout/activity_third.xml" value="0.28020833333333334" />
         <entry key="..\:/homework/MyView/app/src/main/res/layout/add_item.xml" value="0.28020833333333334" />
         <entry key="..\:/homework/MyView/app/src/main/res/layout/first_item.xml" value="0.21354166666666666" />
@@ -22,6 +24,7 @@
         <entry key="..\:/homework/MyView/app/src/main/res/layout/third_item.xml" value="0.21354166666666666" />
         <entry key="..\:/homework/MyView/app/src/main/res/layout/title.xml" value="0.2513586956521739" />
         <entry key="..\:/homework/MyView/app/src/main/res/menu/menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/homework/MyView/app/src/main/res/menu/toolbar.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
