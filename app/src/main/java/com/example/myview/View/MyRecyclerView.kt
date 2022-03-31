@@ -60,7 +60,7 @@ class MyRecyclerView(view: View,resouce:Int,myArray:ArrayList<Int>) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
             val inflater= LayoutInflater.from(parent.context)
-            var holder: RecyclerView.ViewHolder
+            val holder: RecyclerView.ViewHolder
             when(viewType){
                 ONE_ITEM -> holder=ViewHolder1(inflater.inflate(R.layout.first_item,parent,false))
 
@@ -73,30 +73,30 @@ class MyRecyclerView(view: View,resouce:Int,myArray:ArrayList<Int>) {
             if (holder is ViewHolder1) {
                 holder.image1.setImageResource(imageList[position])
                 holder.image1.setOnClickListener {
-                    var intent = Intent(root.context, ShowPictureActivity::class.java)
+                    val intent = Intent(root.context, ShowPictureActivity::class.java)
                     intent.putExtra("ImageImformation", imageList[position])
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    root.context.startActivity(intent);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    root.context.startActivity(intent)
                 }
             }
 
             if (holder is ViewHolder2) {
                 holder.image2.setImageResource(imageList[position])
                 holder.image2.setOnClickListener {
-                    var intent = Intent(root.context, ShowPictureActivity::class.java)
+                    val intent = Intent(root.context, ShowPictureActivity::class.java)
                     intent.putExtra("ImageImformation", imageList[position])
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    root.context.startActivity(intent);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    root.context.startActivity(intent)
                 }
             }
 
             if (holder is ViewHolder3)  {
                 holder.image3.setImageResource(imageList[position])
                 holder.image3.setOnClickListener {
-                    var intent = Intent(root.context, ShowPictureActivity::class.java)
+                    val intent = Intent(root.context, ShowPictureActivity::class.java)
                     intent.putExtra("ImageImformation", imageList[position])
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    root.context.startActivity(intent);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    root.context.startActivity(intent)
                 }
             }
         }

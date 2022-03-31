@@ -14,12 +14,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <com.example.myview.View.BarChartView
                 android:id="@+id/TheFirstView"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="400dp"
                 app:text_size="30sp">
 
             </com.example.myview.View.BarChartView>
@@ -29,13 +30,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="第一行数据名，第二行数据值，中间加空格"
-                android:textSize="20dp"/>
+                android:background="@color/teal_200"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第三页无法自动刷新数据，需要切换到本页再切换回去"
+                android:textSize="20sp"/>
 
             <EditText
                 android:id="@+id/data_edit1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
+                android:ems="200"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
                 android:minHeight="48dp"
@@ -45,7 +54,7 @@
                 android:id="@+id/data_edit2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
+                android:ems="200"
                 android:inputType="text"
                 android:minHeight="48dp"
                 tools:ignore="SpeakableTextPresentCheck" />

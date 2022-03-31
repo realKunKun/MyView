@@ -5,13 +5,11 @@ import android.animation.ValueAnimator
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.KeyEvent
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.TextView
 import com.example.myview.R
 import com.example.myview.View.StepView
 
@@ -32,7 +30,7 @@ class ConterFragment : Fragment() {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {  }
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {  }
             override fun afterTextChanged(p0: Editable?) {
-            var num:Int=p0.toString().toInt()
+            val num:Int=p0.toString().toInt()
             if (num>=0){
                 animator=ObjectAnimator.ofFloat(num.toFloat())
                 initAnimator()

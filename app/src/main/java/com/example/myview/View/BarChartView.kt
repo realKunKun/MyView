@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat
 import com.example.myview.R
 
 
+@SuppressLint("CustomViewStyleable")
 class BarChartView(context: Context, attr: AttributeSet?, defStyleAttr:Int):View(context,attr,defStyleAttr) {
     //设置画笔区域
     private var paintBar:Paint//图标画笔
@@ -166,7 +167,6 @@ class BarChartView(context: Context, attr: AttributeSet?, defStyleAttr:Int):View
                     (Data[j].toString() + "").length,
                     rectText
                 )
-                var radio=keduSpace * 1.0 / valueSpace
                 //绘制柱状条上的值
                 canvas!!.drawText(
                     Data[j].toString() + "",

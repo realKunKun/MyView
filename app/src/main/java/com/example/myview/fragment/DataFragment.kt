@@ -27,8 +27,8 @@ class DataFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         root=view
         //图标显示器
-        var datas = arrayListOf<Int>(40, 76, 90, 50, 187)
-        var xList = arrayListOf<String>("1月份", "2月份", "3月份", "4月份", "5月份")
+        val datas = arrayListOf<Int>(40, 76, 90, 50, 187)
+        val xList = arrayListOf<String>("1月份", "2月份", "3月份", "4月份", "5月份")
         //根据数据的最大值生成上下对应的Y轴坐标范围
         initBarChart(datas,xList)
         val editText1:EditText=view.findViewById(R.id.data_edit1)
@@ -59,14 +59,14 @@ class DataFragment : Fragment() {
     }
 
     fun initBarChart(data:ArrayList<Int>,x:ArrayList<String>){
-        var y=ArrayList<Int>()
+        val y=ArrayList<Int>()
         var maxYAxis: Int? = Collections.max(data)
         if (maxYAxis!! % 2 == 0) {
             maxYAxis = maxYAxis + 2
         } else {
             maxYAxis = maxYAxis + 1
         }
-        var keduSpace = (maxYAxis / data.size) + 1
+        val keduSpace = (maxYAxis / data.size) + 1
         for (i in 0..data.size) {
             y.add(0 + keduSpace * i)
         }

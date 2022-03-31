@@ -23,14 +23,13 @@ class PictureFragment : Fragment() {
     private lateinit var root:View
     private var array=ArrayList<Int>()
     private var choose=1
-    private var size=1
     @SuppressLint("NotifyDataSetChanged")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         root=view
         chipGroup=view.findViewById(R.id.chip_group)
         initpicture()
-        var myRecyclerView=MyRecyclerView(root,R.id.RecyclerView,array)
+        val myRecyclerView=MyRecyclerView(root,R.id.RecyclerView,array)
         chipGroup.setOnCheckedChangeListener { _, selectId->
             run {
                 when (selectId) {
@@ -48,7 +47,7 @@ class PictureFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         root=inflater.inflate(R.layout.fragment_picture, container, false)
         return root
