@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/item_data"
+    android:icon="@drawable/tab_one_selector"
+    android:title="数据图"
+    />
+<item
+    android:id="@+id/item_count"
+    android:icon="@drawable/tab_two_selector"
+    android:title="跑步计数器"
+    />
+<item
+    android:id="@+id/item_picture"
+    android:icon="@drawable/tab_three_selector"
+    android:title="图片"
+    />
+</menu>
